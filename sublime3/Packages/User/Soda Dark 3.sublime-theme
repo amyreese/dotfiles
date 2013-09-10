@@ -1,0 +1,10 @@
+[
+	{
+		"class": "tabset_control",
+		"tab_height": 24,
+	},
+	{
+		"class": "sidebar_tree",
+		"row_padding": [0,1]
+	}
+]

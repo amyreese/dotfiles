@@ -1,0 +1,15 @@
+alias: .alias
+bashrc: .bashrc
+bin: bin
+oh-my-zsh: .oh-my-zsh
+gitconfig: .gitconfig
+gitignore: .gitignore
+htoprc: .config/htop/htoprc
+profile: .profile
+screenrc: .screenrc
+sublime3: .config/sublime-text-3
+synergy.conf: .synergy.conf
+tmux.conf: .tmux.conf
+vim: .vim
+vimrc: .vimrc
+zshrc: .zshrc

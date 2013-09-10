@@ -1,0 +1,14 @@
+*.sublime_metrics
+*.sublime_session
+*.cache
+*.ca-*
+Backup
+Cache
+Index
+Local
+Packages/*
+!Packages/User
+Packages/User/SFTP.errors.log
+Packages/User/Package Control.last-run
+Installed Packages
+

@@ -1,0 +1,36 @@
+alias pu="pushd"
+alias po="popd"
+
+alias ls="/bin/ls --color=auto"
+alias la="ll -A"
+
+alias c="clear"
+alias free="free -m"
+
+alias df="df -h"
+alias du="du -h"
+alias ds="du -sh"
+
+alias mkdir="mkdir -p"
+alias grep="grep --color"
+
+alias vim="vim -p"
+alias view="vim -pR"
+
+alias pyclean="find . -name '*.pyc' -delete && find . -name '__pycache__' -delete"
+
+alias ssk="keychain ~/.ssh/id_rsa; source ~/.keychain/\`hostname\`-sh"
+alias gpk="keychain DE6184DC C45D960E; source ~/.keychain/\`hostname\`-sh-gpg"
+
+alias p="sudo pacman"
+alias pi="sudo pacman -Sy"
+alias pup="sudo pacman -Syu"
+
+alias aur="pacaur --aur"
+alias aurup="pacaur -Syu"
+
+which start >/dev/null 2>&1   && alias start="sudo start"     || alias start="sudo systemctl start"
+which stop >/dev/null 2>&1    && alias stop="sudo stop"       || alias stop="sudo systemctl stop"
+which restart >/dev/null 2>&1 && alias restart="sudo restart" || alias restart="sudo systemctl restart"
+which status >/dev/null 2>&1  && alias status="sudo status"   || alias status="sudo systemctl status"
+which s >/dev/null 2>&1                                       || alias s="sudo systemctl"

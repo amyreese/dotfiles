@@ -1,0 +1,14 @@
+{
+	"installed_packages":
+	[
+		"Git",
+		"GitGutter",
+		"Jinja2",
+		"LESS",
+		"Markdown Preview",
+		"Package Control",
+		"SFTP",
+		"Theme - Soda",
+		"Tomorrow Color Schemes"
+	]
+}

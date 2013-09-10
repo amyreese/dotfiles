@@ -1,0 +1,37 @@
+#!/bin/bash
+
+TMUX_ARGS=""
+
+cmd() {
+	#echo $@
+	$@
+}
+
+if [ "$1" = "-r" ]; then
+	shift
+	cmd tmux attach $@
+
+elif [ "$1" = "-rd" ]; then
+	shift
+	cmd tmux attach -d $@
+
+elif [ "$1" = "-x" ]; then
+	shift
+	if [ "$1" = "-S" ]; then
+		shift
+		SESSION="$1"
+		shift
+	else
+		SESSION=`tmux list-sessions -F "#{session_created},#{session_name},#{?session_attached,,detached}" | grep -v '\-mux' | sort -rg | cut -d, -f2 | head -n1`
+	fi
+
+	SUFFIX="`openssl rand -hex 2`-mux"
+	
+	cmd tmux new-session -d -s $SESSION-$SUFFIX -t $SESSION
+	cmd tmux attach -t $SESSION-$SUFFIX
+	cmd tmux kill-session -t $SESSION-$SUFFIX
+
+else
+	cmd tmux $@
+fi
+

@@ -1,0 +1,7 @@
+*.swp
+*.pyc
+.DS_Store
+.ropeproject
+sftp-config.json
+
+*.tmTheme.cache

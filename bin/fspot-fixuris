@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+
+import os
+from os import path
+import sys
+import getopt
+import re,sqlite3
+
+def fixuris( dbfile ):
+    db = sqlite3.connect( dbfile, isolation_level=None )
+    db.row_factory = sqlite3.Row
+
+    cursor = db.cursor()
+    cursor2 = db.cursor()
+
+    homere = re.compile("^file://(?:/data/photos/|/home/(?:jreese|angel)/photos/)(.*)$")
+
+    for row in cursor.execute( "select id,base_uri from photos" ):
+        match = homere.match( row["base_uri"] )
+        if (match != None):
+            uri = "file:///Photos/" + match.group(1)
+            print (match.group(0) + " -> " + uri)
+            sql = "update photos set base_uri=\"" + uri + "\" where id=" + str(row["id"])
+            print sql
+            cursor2.execute(sql)
+
+    cursor = db.cursor()
+    cursor2 = db.cursor()
+
+    for row in cursor.execute( "select photo_id,version_id,base_uri from photo_versions" ):
+        match = homere.match( row["base_uri"] )
+        if (match != None):
+            uri = "file:///Photos/" + match.group(1)
+            print (match.group(1) + " -> " + uri)
+            sql = "update photo_versions set base_uri=\"" + uri + "\" where photo_id=" + str(row["photo_id"]) + " and version_id=" + str(row["version_id"])
+            print sql
+            cursor2.execute(sql)
+    
+
+def usage():
+    print "Usage: fspot-fixuris.py <photos.db>"
+
+if __name__ == "__main__":
+    try:
+        opts, args = getopt.gnu_getopt( sys.argv[1:], "h" )
+    except getopt.GetoptError:
+        usage()
+        sys.exit(2)
+
+    for (opt, arg) in opts:
+        pass
+
+    if len(args) != 1:
+        usage()
+        sys.exit(1)
+
+    dbfile = args[0]
+    if not path.isfile(dbfile):
+        usage()
+        sys.exit(2)
+
+    fixuris(dbfile)
+

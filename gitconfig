@@ -1,0 +1,49 @@
+[user]
+	name = John Reese
+	email = john@noswap.com
+
+[core]
+	excludesfile = ~/.gitignore
+	preloadindex = true
+
+[help]
+	autocorrect = -1
+
+[color]
+	branch = auto
+	diff = auto
+	grep = auto
+	interactive = auto
+	status = auto
+	ui = auto
+
+[alias]
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+	amend = commit --amend
+	st = status -sb
+	ci = commit
+	cu = !git add -u && git commit
+	co = checkout
+	di = diff
+	cdi = diff --cached
+	br = branch
+	rb = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbi = rebase --interactive
+	pullr = pull --rebase
+	fp = format-patch --binary
+	fpo = format-patch --binary --stdout
+	last = log -p -n1
+	pick = cherry-pick
+	pop = stash pop
+	sm = !git submodule
+	smi = !git submodule init && git submodule update --recursive
+	smu = !git submodule update --recursive
+
+[branch]
+	autosetuprebase = local
+
+[push]
+	default = upstream

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+pids=`pgrep $1`
+if [ -n "$pids" ]; then
+	ps u $pids
+else
+	exit 1
+fi
