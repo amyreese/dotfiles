@@ -8,7 +8,7 @@ Index
 Local
 Packages/*
 !Packages/User
-Packages/User/SFTP.errors.log
+Packages/User/SFTP*
 Packages/User/Package Control.last-run
 Installed Packages
 
