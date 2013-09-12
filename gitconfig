@@ -21,12 +21,14 @@
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
 	amend = commit --amend
+	fixup = commit --amend --no-edit
 	st = status -sb
 	ci = commit
 	cu = !git add -u && git commit
 	co = checkout
 	di = diff
 	cdi = diff --cached
+	rmc = rm --cached
 	br = branch
 	rb = rebase
 	rba = rebase --abort
@@ -35,12 +37,10 @@
 	pullr = pull --rebase
 	fp = format-patch --binary
 	fpo = format-patch --binary --stdout
-	last = log -p -n1
 	pick = cherry-pick
 	pop = stash pop
 	sm = !git submodule
-	smi = !git submodule init && git submodule update --recursive
-	smu = !git submodule update --recursive
+	smi = !git submodule update --init --recursive
 
 [branch]
 	autosetuprebase = local
