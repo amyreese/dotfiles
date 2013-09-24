@@ -19,18 +19,18 @@ export CVS_RSH="ssh"
 
 # Local OPT binaries
 # Used before any system binaries
-if [ -d ${HOME}/opt/bin ]; then
+if [ -d "${HOME}/opt/bin/" ]; then
 	export PATH="${HOME}/opt/bin:${PATH}"
 fi
 
 # Local binaries
 # Used only if system binaries not available
-if [ -d ${HOME}/bin ]; then
+if [ -d "${HOME}/bin/" ]; then
 	export PATH="${PATH}:${HOME}/bin"
 fi
 
 # Local manpages
-if [ -d ${HOME}/man ]; then
+if [ -d "${HOME}/man/" ]; then
 	export MANPATH=":${HOME}/man"
 fi
 
