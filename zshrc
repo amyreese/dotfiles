@@ -21,7 +21,9 @@ then
 	export TERM=xterm-256color
 fi
 
-plugins=(lol nyan zsh-syntax-highlighting)
+export KEYTIMEOUT=3
+
+plugins=(vi-mode lol nyan zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...

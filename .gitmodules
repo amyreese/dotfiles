@@ -3,4 +3,4 @@
 	url = https://github.com/chriskempson/tomorrow-theme.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
-	url = https://github.com/jreese/oh-my-zsh.git
+	url = git@github.com:jreese/oh-my-zsh.git
