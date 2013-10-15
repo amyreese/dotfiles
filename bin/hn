@@ -1,7 +1,18 @@
 #!/bin/bash
 
+if [ `whoami` != "root" ]; then
+	echo 'Error: must be run as root'
+	exit 1
+fi
+
+minutes=$1
+if [ -z "$minutes" ]; then
+	minutes=10
+fi
+seconds=$(($minutes * 60))
+
 sed -i -e 's|^127.0.1.1|#127.0.1.1|g' /etc/hosts
 trap "sed -i -e 's|^#127.0.1.1|127.0.1.1|g' /etc/hosts" EXIT
 
-echo 'Waiting: will disable hosts in 10 minutes...'
-sleep 600
+echo "Waiting: will disable hosts in $minutes minutes..."
+sleep $seconds
