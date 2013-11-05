@@ -41,6 +41,7 @@
 	pop = stash pop
 	sm = !git submodule
 	smi = !git submodule update --init --recursive
+	up = !git pullr && git smi
 
 [branch]
 	autosetuprebase = local
