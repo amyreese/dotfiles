@@ -29,6 +29,9 @@ set backspace=indent,eol,start
 set tags=tags,../tags,$workspace/tags,~/.vim/tags,/dev/null
 set list lcs=tab:\ \ ,extends:>,precedes:<
 
+let c_space_errors=1
+match ErrorMsg /\s\+$\| \+\ze\t/
+
 " Display the current branch in Git, or nothing if not in a repo
 function MyGitBranch()
 	if exists("*GitBranch")
