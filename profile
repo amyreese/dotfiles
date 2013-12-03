@@ -13,6 +13,7 @@ stty erase 
 export LANG=en_US.UTF-8
 export EDITOR=vim
 export PAGER=less
+export HISTSIZE=50000
 
 export CVS_RSH="ssh"
 #export CDPATH=".:${HOME}:$workspace"
