@@ -20,6 +20,9 @@ fi
 if [ -f ${HOME}/.alias ]; then
 	. ${HOME}/.alias
 fi
+if [ -f ${HOME}/.alias_local ]; then
+	. ${HOME}/.alias_local
+fi
 
 # Bash prompt
 PS1='\u@\h:\w\$ '
