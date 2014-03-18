@@ -1,0 +1,19 @@
+#!/bin/bash
+
+retry="1"
+
+while [ "$retry" -ne "0" ]
+do
+	retry="1"
+
+	git pull --rebase && git push $*
+	retry="$?"
+
+	if [ "$retry" -ne "0" ]
+	then
+		echo "failed, trying again..."
+		sleep 1
+	fi
+done
+
+echo "success!
