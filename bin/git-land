@@ -1,0 +1,16 @@
+#!/bin/bash
+
+BRANCH=$1
+TARGET=$2
+
+if [ -z "$BRANCH" ]
+then
+	BRANCH=$(git name-rev HEAD | awk '{print $2}')
+fi
+
+if [ -z "$TARGET" ]
+then
+	TARGET="master"
+fi
+
+git checkout --force $BRANCH && git rebase $TARGET && git checkout --force $TARGET && git merge $BRANCH && git branch --delete $BRANCH
