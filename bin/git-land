@@ -13,4 +13,14 @@ then
 	TARGET="master"
 fi
 
-git checkout --force $BRANCH && git rebase $TARGET && git checkout --force $TARGET && git merge $BRANCH && git branch --delete $BRANCH
+if [ -z "$GIT_LAND_PRE_REBASE" ]
+then
+	GIT_LAND_PRE_REBASE="true"
+fi
+
+git checkout --force $BRANCH && \
+	$GIT_LAND_PRE_REBASE && \
+	git rebase $TARGET && \
+	git checkout --force $TARGET && \
+	git merge $BRANCH && \
+	git branch --delete $BRANCH
