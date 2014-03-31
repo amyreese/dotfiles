@@ -24,7 +24,7 @@ alias gpk="keychain DE6184DC C45D960E; source ~/.keychain/\`hostname\`-sh-gpg"
 
 alias p="sudo pacman"
 alias pi="sudo pacman -Sy"
-alias pup="sudo pacman -Syu"
+alias pup="sudo pacman -Syu && paccache -r -k3"
 
 alias aur="pacaur --aur"
 alias aurup="pacaur -Syu"
