@@ -18,9 +18,15 @@ then
 	GIT_LAND_PRE_REBASE="true"
 fi
 
-git checkout --force $BRANCH && \
-	$GIT_LAND_PRE_REBASE && \
-	git rebase $TARGET && \
-	git checkout --force $TARGET && \
-	git merge $BRANCH && \
-	git branch --delete $BRANCH
+if [ "$BRANCH" = "$TARGET" ]
+then
+	echo "already on target branch, bravely running hooks"
+	$GIT_LAND_PRE_REBASE
+else
+	git checkout --force $BRANCH && \
+		$GIT_LAND_PRE_REBASE && \
+		git rebase $TARGET && \
+		git checkout --force $TARGET && \
+		git merge $BRANCH && \
+		git branch --delete $BRANCH
+fi
