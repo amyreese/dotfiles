@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"Base16 Color Schemes",
 		"Git",
 		"GitGutter",
 		"Jinja2",
@@ -8,7 +9,6 @@
 		"Markdown Preview",
 		"Package Control",
 		"SFTP",
-		"Theme - Soda",
-		"Tomorrow Color Schemes"
+		"Theme - Soda"
 	]
 }

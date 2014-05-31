@@ -4,7 +4,7 @@
 	"auto_indent": true,
 	"auto_match_enabled": true,
 	"bold_folder_labels": false,
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"color_scheme": "Packages/Base16 Color Schemes/base16-tomorrow.dark.tmTheme",
 	"detect_indentation": true,
 	"drag_text": false,
 	"draw_indent_guides": true,
