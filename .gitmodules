@@ -10,3 +10,6 @@
 [submodule "base16-textmate"]
 	path = base16-textmate
 	url = https://github.com/chriskempson/base16-textmate.git
+[submodule "base16-iterm2"]
+	path = base16-iterm2
+	url = https://github.com/chriskempson/base16-iterm2.git
