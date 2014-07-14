@@ -5,6 +5,7 @@ set guioptions-=T guifont=Pragmata\ TT\ 8,monospace\ 8
 colorscheme xoria256
 
 set ai
+set expandtab
 set hidden
 set history=100
 set hlsearch
@@ -18,7 +19,9 @@ set shiftwidth=4
 set shortmess=atI
 set showtabline=2
 set sidescroll=8
+set softtabstop=4
 set smartcase
+set smarttab
 set tabpagemax=20
 set tabstop=4
 set t_Co=256
@@ -96,7 +99,6 @@ augroup files
   au FileType php inoremap <Tab> <C-R>=TabComplete()<CR>
 
   au FileType python set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\" efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
-  au FileType python set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=80 smarttab expandtab
   au FileType python inoremap <Tab> <C-R>=TabComplete()<CR>
 
   au FileType perl set makeprg=perl\ -c\ %
