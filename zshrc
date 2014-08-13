@@ -21,7 +21,7 @@ then
 	export TERM=xterm-256color
 fi
 
-plugins=(command-not-found lol mosh pip vi-mode web-search zsh-completions zsh-syntax-highlighting)
+plugins=(command-not-found history mosh pip sudo themes vi-mode which zsh-completions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
