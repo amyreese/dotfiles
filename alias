@@ -3,6 +3,7 @@ alias po="popd"
 
 alias ls="/bin/ls --color=auto"
 alias la="ll -A"
+which sl >/dev/null 2>&1 && alias sl="sl && ls" || alias sl=ls
 
 alias c="clear"
 alias free="free -m"
@@ -34,3 +35,4 @@ which stop >/dev/null 2>&1    && alias stop="sudo stop"       || alias stop="sud
 which restart >/dev/null 2>&1 && alias restart="sudo restart" || alias restart="sudo systemctl restart"
 which status >/dev/null 2>&1  && alias status="sudo status"   || alias status="sudo systemctl status"
 which s >/dev/null 2>&1                                       || alias s="sudo systemctl"
+
