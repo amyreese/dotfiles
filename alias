@@ -30,6 +30,10 @@ alias pup="sudo pacman -Syu && paccache -r -k3"
 alias aur="pacaur --aur"
 alias aurup="pacaur -Syu"
 
+alias b=brew
+alias bi="brew install"
+alias bup="brew update && brew upgrade"
+
 which start >/dev/null 2>&1   && alias start="sudo start"     || alias start="sudo systemctl start"
 which stop >/dev/null 2>&1    && alias stop="sudo stop"       || alias stop="sudo systemctl stop"
 which restart >/dev/null 2>&1 && alias restart="sudo restart" || alias restart="sudo systemctl restart"
