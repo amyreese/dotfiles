@@ -15,6 +15,8 @@ export EDITOR=vim
 export PAGER=less
 export HISTSIZE=50000
 
+export PYTHONSTARTUP="$HOME/.pythonrc"
+
 export CVS_RSH="ssh"
 #export CDPATH=".:${HOME}:$workspace"
 
