@@ -35,6 +35,7 @@
 	[
 		100
 	],
+	"scroll_past_end": true,
 	"show_tab_close_buttons": false,
 	"smart_indent": true,
 	"tab_size": 4,

@@ -1,7 +1,7 @@
 *.sublime_metrics
 *.sublime_session
 *.cache
-*.ca-*
+*ca-*
 Backup
 Cache
 Index
