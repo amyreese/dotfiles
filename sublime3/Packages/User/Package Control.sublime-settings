@@ -1,4 +1,7 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"Base16 Color Schemes",
@@ -9,6 +12,7 @@
 		"Markdown Preview",
 		"Package Control",
 		"SFTP",
+		"SublimePythonIDE",
 		"Theme - Soda"
 	]
 }
