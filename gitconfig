@@ -3,6 +3,7 @@
 	email = john@noswap.com
 
 [core]
+	editor = vim
 	excludesfile = ~/.gitignore
 	preloadindex = true
 
