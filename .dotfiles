@@ -1,7 +1,6 @@
 alias: .alias
 bashrc: .bashrc
 bin: bin
-oh-my-zsh: .oh-my-zsh
 gitconfig: .gitconfig
 gitignore: .gitignore
 htoprc: .config/htop/htoprc
