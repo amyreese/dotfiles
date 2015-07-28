@@ -12,10 +12,12 @@ antigen use oh-my-zsh
 antigen bundles <<END
   command-not-found
   mosh
-  vi-mode
 
   zsh-users/zsh-completions
   zsh-users/zsh-syntax-highlighting
+
+  jreese/zsh-opt-path
+  jreese/zsh-which
 END
 
 antigen theme ~/.zsh jreese
