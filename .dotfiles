@@ -12,4 +12,5 @@ synergy.conf: .synergy.conf
 tmux.conf: .tmux.conf
 vim: .vim
 vimrc: .vimrc
+zsh: .zsh
 zshrc: .zshrc
