@@ -23,6 +23,8 @@ for arg in sys.argv[1:]:
     else:
         print_timestamp(arg)
 
+    sys.exit(0)
+
 for line in sys.stdin:
     print_timestamp(line)
 
