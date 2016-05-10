@@ -24,3 +24,8 @@ END
 antigen theme ~/.zsh jreese
 
 antigen apply
+
+if [ -f ~/.zsh_local ]
+then
+    source ~/.zsh_local
+fi
