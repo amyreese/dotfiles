@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+function adduri {
+    echo $1
+    /usr/share/doc/aria2/xmlrpc/aria2rpc --secret super-secret addUri "$1"
+}
+
+if [ -n "$1" ]; then
+    while [ -n "$1" ]; do
+        adduri "$1"
+        shift
+    done
+else
+    while read line; do
+        adduri "$line"
+    done
+fi
+
