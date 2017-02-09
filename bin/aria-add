@@ -2,10 +2,17 @@
 
 set -e
 
+aria2rpc=/usr/share/doc/aria2/xmlrpc/aria2rpc
+
 function adduri {
     echo $1
-    /usr/share/doc/aria2/xmlrpc/aria2rpc --secret super-secret addUri "$1"
+    $aria2rpc --secret super-secret addUri "$1"
 }
+
+if [ ! -x $aria2rpc ]; then
+    echo "need to chmod +x aria2rpc"
+    sudo chmod +x $aria2rpc
+fi
 
 if [ -n "$1" ]; then
     while [ -n "$1" ]; do
@@ -13,6 +20,7 @@ if [ -n "$1" ]; then
         shift
     done
 else
+    echo "reading urls from stdin:"
     while read line; do
         adduri "$line"
     done
