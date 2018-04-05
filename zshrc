@@ -17,6 +17,7 @@ antigen bundles <<END
   zsh-users/zsh-syntax-highlighting
 
   jreese/zsh-opt-path
+  jreese/zsh-pyenv
   jreese/zsh-titles
   jreese/zsh-which
 END
