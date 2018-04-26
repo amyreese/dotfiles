@@ -1,4 +1,5 @@
 *.swp
 *~
 *.pyc
+*.antigen-compat
 vim/.netrwhist
