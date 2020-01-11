@@ -20,6 +20,8 @@ antigen bundles <<END
   jreese/zsh-pyenv
   jreese/zsh-titles
   jreese/zsh-which
+
+  softmoth/zsh-vim-mode
 END
 
 antigen theme ~/.zsh jreese
