@@ -3,6 +3,9 @@
 set -e
 
 aria2rpc=/usr/share/doc/aria2/xmlrpc/aria2rpc
+if [ ! -f $aria2rpc ]; then
+    aria2rpc=/usr/local/share/doc/aria2/xmlrpc/aria2rpc
+fi
 
 function adduri {
     echo $1
