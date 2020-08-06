@@ -3,6 +3,11 @@ then
 	export TERM=xterm-256color
 fi
 
+if [ -f ~/.zsh_local_pre ]
+then
+    source ~/.zsh_local_pre
+fi
+
 source ~/.profile
 source ~/.alias
 source ~/.zsh/antigen.zsh
