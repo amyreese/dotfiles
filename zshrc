@@ -26,7 +26,7 @@ antigen bundles <<END
   jreese/zsh-titles
   jreese/zsh-which
 
-  softmoth/zsh-vim-mode
+  softmoth/zsh-vim-mode@abecc2be4744a6f486136dec611a61569d34fab0
 END
 
 antigen theme ~/.zsh jreese
