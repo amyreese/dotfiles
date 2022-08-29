@@ -1,6 +1,7 @@
 [user]
-	name = John Reese
-	email = john@noswap.com
+	name = Amethyst Reese
+	email = amy@n7.gg
+	signingKey = 9F69256A
 
 [core]
 	editor = vim
@@ -44,6 +45,9 @@
 	smi = !git submodule update --init --recursive
 	up = !git pullr && git smi
 
+[fetch]
+    prune = true
+
 [branch]
 	autosetuprebase = local
 
@@ -57,3 +61,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[pull]
+	ff = only
