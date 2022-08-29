@@ -22,7 +22,7 @@ Note that dotlink will overwrite any existing dotfiles.
 legal
 -----
 
-Copyright 2013 John Reese.
+Copyright 2022 Amethyst Reese.
 Licensed under the MIT license.
 Use them however you'd like to.
 
