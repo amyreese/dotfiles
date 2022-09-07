@@ -17,7 +17,7 @@ alias grep="grep --color"
 alias vim="vim -p"
 alias view="vim -pR"
 
-alias ssk="keychain ~/.ssh/id_rsa; source ~/.keychain/\`hostname\`-sh"
+alias ssk="keychain ~/.ssh/id_ed25519 ~/.ssh/id_rsa; source ~/.keychain/\`hostname\`-sh"
 alias gpk="keychain DE6184DC C45D960E; source ~/.keychain/\`hostname\`-sh-gpg"
 
 alias p="sudo pacman"
