@@ -63,3 +63,7 @@
 	required = true
 [pull]
 	ff = only
+[branchless "restack"]
+	preserveTimestamps = true
+[branchless "next"]
+	interactive = true
