@@ -35,22 +35,9 @@ set list lcs=tab:\ \ ,extends:>,precedes:<
 let c_space_errors=1
 match ErrorMsg /\s\+$\| \+\ze\t/
 
-" Display the current branch in Git, or nothing if not in a repo
-function MyGitBranch()
-	if exists("*GitBranch")
-		let a = GitBranch()
-		if a != ""
-			return "[git] " . a
-		endif
-	else
-		return ""
-	endif
-endfunction
-
-" Display the status line, containing "filename [filetype]   [git] gitbranch
-" line xx-yy  col yy-zz   xx%"
+" Display the status line, containing "filename [filetype]   line xx-yy  col yy-zz   xx%"
 set laststatus=2
-set statusline=%<%f\ %y%m%r\ %=%-20.(%{MyGitBranch()}%)\ \ \ \ %-16.(line\ %l-%L%)\ %-10.(col\ %c%V%)\ \ %P
+set statusline=%<%f\ %y%m%r\ %=%-16.(line\ %l-%L%)\ %-10.(col\ %c%V%)\ \ %P
 
 " Quick shortcuts for keymappings
 let mapleader = "-"
