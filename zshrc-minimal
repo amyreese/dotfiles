@@ -5,7 +5,12 @@ export EDITOR=vim
 export PAGER=less
 
 export LSCOLORS=ExFxCxDxBxegedabagacad
-export PS1='%F{red}%n@%m%f %/ %F{red}#%f '
+
+if [ "$(whoami)" = "root" ]; then
+    export PS1='%F{red}%n@%m%f %/ %F{red}#%f '
+else
+    export PS1='%F{yellow}%n@%m%f %~ $ '
+fi
 
 export SAVEHIST=100000
 export HISTSIZE=10000
@@ -29,3 +34,6 @@ alias pu=pushd
 alias po=popd
 fn take() { mkdir -p $1 && pushd $1 }
 
+if [ -f ~/.zsh_local ]; then
+    source ~/.zsh_local
+fi
