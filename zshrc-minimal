@@ -1,0 +1,31 @@
+# for deploying to unmanaged environments
+
+export LANG=en_US.UTF-8
+export EDITOR=vim
+export PAGER=less
+
+export LSCOLORS=ExFxCxDxBxegedabagacad
+export PS1='%F{red}%n@%m%f %/ %F{red}#%f '
+
+export SAVEHIST=100000
+export HISTSIZE=10000
+export HISTFILE=~/.zsh_history
+setopt APPEND_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_FIND_NO_DUPS
+setopt INC_APPEND_HISTORY
+
+autoload -U compinit; compinit
+autoload -U up-line-or-beginning-search; zle -N up-line-or-beginning-search
+autoload -U down-line-or-beginning-search; zle -N down-line-or-beginning-search
+autoload -U edit-command-line; zle -N edit-command-line
+
+bindkey -M emacs "${terminfo[kcuu1]}" up-line-or-beginning-search
+bindkey -M emacs "${terminfo[kcud1]}" down-line-or-beginning-search
+bindkey '\ec' edit-command-line
+bindkey '\ee' edit-command-line
+
+alias pu=pushd
+alias po=popd
+fn take() { mkdir -p $1 && pushd $1 }
+
