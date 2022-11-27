@@ -12,6 +12,8 @@ else
     export PS1='%F{yellow}%n@%m%f %~ $ '
 fi
 
+export WORDCHARS=''  # break ^W by / instead of spaces
+
 export SAVEHIST=100000
 export HISTSIZE=10000
 export HISTFILE=~/.zsh_history
