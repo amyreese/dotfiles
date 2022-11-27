@@ -29,7 +29,7 @@ set wildmenu
 set wildmode=list:longest
 
 set backspace=indent,eol,start
-set tags=tags,../tags,$workspace/tags,~/.vim/tags,/dev/null
+" set tags=tags,../tags,$workspace/tags,~/.vim/tags,/dev/null
 set list lcs=tab:\ \ ,extends:>,precedes:<
 
 let c_space_errors=1
@@ -69,9 +69,9 @@ ab tabnew tabnew
 
 " Utility shortcuts
 map <F2> <Esc>:make<CR>
-map <S-F2> <Esc>:!ctags-exuberant -R -f tags --totals=yes<CR>
+" map <S-F2> <Esc>:!ctags-exuberant -R -f tags --totals=yes<CR>
 map <F4> 
-map <F5> <Esc>:tag 
+" map <F5> <Esc>:tag 
 map <F9> <Esc>:set list lcs=tab:>\ ,trail:%,eol:$,extends:>,precedes:<<CR>
 map <S-F9> <Esc>:set list lcs=tab:\ \ ,extends:>,precedes:<<CR>
 
