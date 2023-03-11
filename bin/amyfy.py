@@ -20,6 +20,8 @@ REPLACEMENTS = [
 
 MAILMAP = [
     "Amethyst Reese <amy@n7.gg> <john@noswap.com>",
+    "Amethyst Reese <amy@n7.gg> <jreese@fb.com>",
+    "",  # trailing newline
 ]
 
 
@@ -30,7 +32,7 @@ def run(cmd, *, check=True, encoding="utf-8", **kwargs) -> subprocess.CompletedP
 
 
 def update(path: Path) -> bool:
-    if not path.is_file():
+    if not path.is_file() or path.name in (".mailmap",):
         return False
     try:
         content = orig = path.read_text("utf-8")
