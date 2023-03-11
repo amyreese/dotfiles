@@ -18,11 +18,14 @@ REPLACEMENTS = [
     ]
 ]
 
-MAILMAP = [
-    "Amethyst Reese <amy@n7.gg> <john@noswap.com>",
-    "Amethyst Reese <amy@n7.gg> <jreese@fb.com>",
-    "",  # trailing newline
-]
+MAILMAP_NAME = "Amethyst Reese <amy@n7.gg>"
+MAILMAP_DEAD = {
+    "john@noswap.com",
+    "jreese@fb.com",
+    "johnr@ea2d.com",
+    "jreese@leetcode.net",
+    "nuclear_eclipse@leetcode.net",
+}
 
 
 def run(cmd, *, check=True, encoding="utf-8", **kwargs) -> subprocess.CompletedProcess:
@@ -51,10 +54,17 @@ def update(path: Path) -> bool:
 
 
 def mailmap() -> bool:
+    proc = run(
+        ["git", "log", "--no-mailmap", r"--format=format:%ae"], capture_output=True
+    )
+    emails = set(proc.stdout.splitlines())
+    dead_emails = emails & MAILMAP_DEAD
+    mailmap = sorted(f"{MAILMAP_NAME} <{email}>" for email in dead_emails)
+
     path = Path(".mailmap")
     if not path.exists():
         print(f"> creating {path}")
-        path.write_text("\n".join(MAILMAP), "utf-8")
+        path.write_text("\n".join(mailmap) + "\n", "utf-8")
         return True
 
     else:
@@ -72,8 +82,8 @@ def mailmap() -> bool:
         if found is None:
             found = len(lines)
 
-        lines[found:0] = MAILMAP
-        content = "\n".join(lines)
+        lines[found:0] = mailmap
+        content = "\n".join(lines) + "\n"
 
         if content != orig:
             print(f"> updating {path}")
