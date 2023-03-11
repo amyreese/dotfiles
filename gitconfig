@@ -45,6 +45,9 @@
 	smi = !git submodule update --init --recursive
 	up = !git pullr && git smi
 
+[init]
+	defaultBranch = main
+
 [fetch]
     prune = true
 
