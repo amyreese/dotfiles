@@ -1,5 +1,5 @@
 " Vim color file
-" Maintainer:   John Reese
+" Maintainer:   Amethyst Reese
 " Last Change:  April 28 2008
 "
 " tango256.vim - a modified version of Wombat256 by David Liang, which itself
