@@ -31,6 +31,9 @@ antigen theme ~/.zsh amethyst
 
 antigen apply
 
+push_path ~/.cargo/bin
+push_path ~/.local/bin
+
 if [ -f ~/.zsh_local ]
 then
     source ~/.zsh_local
