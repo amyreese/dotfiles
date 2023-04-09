@@ -21,15 +21,13 @@ antigen bundles <<END
   zsh-users/zsh-completions
   zsh-users/zsh-syntax-highlighting
 
-  jreese/zsh-opt-path
-  jreese/zsh-pyenv
-  jreese/zsh-titles
-  jreese/zsh-which
-
-  softmoth/zsh-vim-mode@abecc2be4744a6f486136dec611a61569d34fab0
+  amyreese/zsh-opt-path
+  amyreese/zsh-pyenv
+  amyreese/zsh-titles
+  amyreese/zsh-which
 END
 
-antigen theme ~/.zsh jreese
+antigen theme ~/.zsh amethyst
 
 antigen apply
 
