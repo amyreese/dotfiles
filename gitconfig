@@ -70,3 +70,5 @@
 	preserveTimestamps = true
 [branchless "next"]
 	interactive = true
+[branchless "smartlog"]
+	defaultRevset = ((branches() | @) % main()) | branches() | @
