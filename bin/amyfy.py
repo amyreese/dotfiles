@@ -18,7 +18,7 @@ REPLACEMENTS = [
     ]
 ]
 
-MAILMAP_NAME = "Amethyst Reese <amy@n7.gg>"
+MAILMAP_NAME = "Amethyst Reese <amethyst@n7.gg>"
 MAILMAP_DEAD = {
     "john@noswap.com",
     "jreese@fb.com",
