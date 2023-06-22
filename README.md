@@ -14,7 +14,7 @@ setup
 
 To install all the dotfiles at once using dotlink directly from github:
 
-    $ dotlink git://github.com/jreese/dotfiles
+    $ dotlink git://github.com/amyreese/dotfiles
 
 Note that dotlink will overwrite any existing dotfiles.
 
@@ -27,4 +27,4 @@ Licensed under the MIT license.
 Use them however you'd like to.
 
 
-[dotlink]: https://github.com/jreese/dotlink
+[dotlink]: https://github.com/amyreese/dotlink
