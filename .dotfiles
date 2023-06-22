@@ -1,6 +1,7 @@
 alias: .alias
 bashrc: .bashrc
 bin: bin
+brewfile: Brewfile
 gitconfig: .gitconfig
 gitignore: .gitignore
 htoprc: .config/htop/htoprc
