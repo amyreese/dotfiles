@@ -28,9 +28,9 @@ antigen bundles <<END
 END
 
 antigen theme ~/.zsh amethyst
-
 antigen apply
 
+push_path ~/bin
 push_path ~/.cargo/bin
 push_path ~/.local/bin
 
