@@ -1,0 +1,49 @@
+#!/bin/bash
+
+## Global
+
+# Disable automatic double-hyphen to em-dash conversion,
+# while leaving automatic smart quotes enabled
+defaults write -g NSAutomaticDashSubstitutionEnabled 0
+
+# Disable double-space to period
+defaults write -g NSAutomaticPeriodSubstitutionEnabled 0
+
+# Show scrollbars only when scrolling
+defaults write -g AppleShowScrollBars -string WhenScrolling
+
+
+## Dock
+
+# Make dock icons translucent when windows are hidden
+defaults write com.apple.dock showhidden -bool true
+
+# No recent apps
+defaults write com.apple.dock show-recents -bool false
+
+killall Dock
+
+
+## Finder
+
+# Quit menu option
+defaults write com.apple.finder QuitMenuItem -bool true
+
+# Show hidden files
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Folders on top
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# Search current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string SCcf
+
+# Show all filename extensions.
+defaults write -g AppleShowAllExtensions 1
+
+# Show proxy icons immediately
+defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true
+defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
+
+killall Finder
+
