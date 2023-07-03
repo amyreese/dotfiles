@@ -9,7 +9,6 @@ then
 fi
 
 source ~/.profile
-source ~/.alias
 source ~/.zsh/antigen.zsh
 
 antigen use oh-my-zsh
@@ -33,6 +32,8 @@ antigen apply
 push_path ~/bin
 push_path ~/.cargo/bin
 push_path ~/.local/bin
+
+source ~/.alias
 
 if [ -f ~/.zsh_local ]
 then

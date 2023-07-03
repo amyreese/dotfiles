@@ -15,7 +15,7 @@ esac
 HISTCONTROL=erasedups
 HISTIGNORE="cd*:dc*:exit:fg"
 
-shopt -s cdable_vars cdspell checkwinsize cmdhist dotglob histappend 
+shopt -s cdable_vars cdspell checkwinsize cmdhist dotglob histappend
 shopt -s no_empty_cmd_completion
 shopt -u mailwarn
 
