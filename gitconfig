@@ -8,6 +8,9 @@
 	excludesfile = ~/.gitignore
 	preloadindex = true
 
+[safe]
+	bareRepository = true
+
 [help]
 	autocorrect = -1
 
@@ -48,24 +51,27 @@
 [init]
 	defaultBranch = main
 
-[fetch]
-    prune = true
-
 [branch]
 	autosetuprebase = local
+
+[fetch]
+    prune = true
 
 [push]
 	default = upstream
 
+[pull]
+	ff = only
+
 [diff]
 	renames = true
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[pull]
-	ff = only
+
 [branchless "restack"]
 	preserveTimestamps = true
 [branchless "next"]
