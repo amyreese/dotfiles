@@ -39,3 +39,4 @@ which s >/dev/null 2>&1                                       || alias s="sudo s
 
 which ggrep >/dev/null 2>&1 && alias grep="ggrep --color"
 which gmake >/dev/null 2>&1 && alias grep="gmake"
+which gsed >/dev/null 2>&1 && alias sed="gsed"
