@@ -13,7 +13,9 @@ function my_vi_mode_prompt_info() {
 	echo $thing
 }
 
-PROMPT='%{$fg[$NCOLOR]%}%n%{$fg[green]%}@%m%{$reset_color%} %~ \
+NEWLINE=$'\n'
+
+PROMPT='${NEWLINE}%{$fg[$NCOLOR]%}%n%{$fg[green]%}@%m%{$reset_color%} %~ \
 $(git_prompt_info)\
 ${return_code}\
 $(my_vi_mode_prompt_info) '
