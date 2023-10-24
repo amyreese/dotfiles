@@ -1,0 +1,27 @@
+#!/bin/bash
+
+PASTE=${PASTE:-gh gist create}
+
+set -o pipefail
+
+command="$*"
+templog="$(mktemp)"
+
+function cleanup {
+    rm "${templog}"
+}
+
+trap cleanup EXIT
+
+echo "${PWD} $ ${command}" >> "${templog}"
+echo "" >> "${templog}"
+
+$* 2>&1 | tee -a "${templog}"
+code="$?"
+
+echo "" >> "${templog}"
+echo "Exit code: ${code}" >> "${templog}"
+
+$PASTE < "${templog}"
+
+exit "${code}"
