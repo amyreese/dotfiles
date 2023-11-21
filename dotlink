@@ -8,5 +8,4 @@ Brewfile = brewfile
 .tmux.conf = tmux.conf
 .vim = vim
 .vimrc = vimrc
-.zsh = zsh
 .zshrc = zshrc
