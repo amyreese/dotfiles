@@ -12,7 +12,6 @@ source ~/.profile
 source ~/.zsh/antigen.zsh
 
 antigen use oh-my-zsh
-
 antigen bundles <<END
   command-not-found
   mosh
@@ -25,7 +24,6 @@ antigen bundles <<END
   amyreese/zsh-titles
   amyreese/zsh-which
 END
-
 antigen theme ~/.zsh amethyst
 antigen apply
 

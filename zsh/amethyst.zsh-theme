@@ -1,29 +1,25 @@
-# ZSH Theme - Preview: http://dl.dropbox.com/u/1552408/Screenshots/2010-04-08-oh-my-zsh.png
+setopt PROMPT_SUBST
 
-if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
-local return_code="%(?..%{$fg[red]%}‹%?› %{$reset_color%})"
+autoload -Uz add-zsh-hook
+autoload -Uz colors && colors
+autoload -Uz vcs_info
 
-CMD_MODE_INDICATOR="%{$fg_bold[yellow]%}%(!.#.»)%{$reset_color%}"
-INS_MODE_INDICATOR="%{$fg_bold[red]%}%(!.#.»)%{$reset_color%}"
-function my_vi_mode_prompt_info() {
-	thing="${${KEYMAP/vicmd/$CMD_MODE_INDICATOR}/(main|viins)/$INS_MODE_INDICATOR}"
-	if [[ $thing == "" ]]; then
-		thing="$INS_MODE_INDICATOR"
-	fi
-	echo $thing
+add-zsh-hook precmd vcs_info
+add-zsh-hook precmd _amethyst_precmd_hook
+
+function _amethyst_precmd_hook() {
+    local exit_code=$?
+    if (( $exit_code != 0 )); then
+        echo "$fg[red]> [$exit_code]${reset_color}"
+    fi
+    echo
 }
 
-NEWLINE=$'\n'
+zstyle ':vcs_info:*' enable git hg
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' stagedstr '%F{yellow}+%f'
+zstyle ':vcs_info:*' unstagedstr '%F{red}+%f'
+zstyle ':vcs_info:*' formats '%F{yellow}%b%f%c%u '
 
-PROMPT='${NEWLINE}%{$fg[$NCOLOR]%}%n%{$fg[green]%}@%m%{$reset_color%} %~ \
-$(git_prompt_info)\
-${return_code}\
-$(my_vi_mode_prompt_info) '
-PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
-RPS1=''
-
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_CLEAN=" "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]±"
+PS1='%(!.%F{red}.%F{green})%n%F{green}@%m%f %~ $vcs_info_msg_0_%{$fg_bold[red]%}»%{${reset_color}%} '
 
