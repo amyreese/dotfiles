@@ -38,5 +38,5 @@ which status >/dev/null 2>&1  && alias status="sudo status"   || alias status="s
 which s >/dev/null 2>&1                                       || alias s="sudo systemctl"
 
 which ggrep >/dev/null 2>&1 && alias grep="ggrep --color"
-which gmake >/dev/null 2>&1 && alias grep="gmake"
+which gmake >/dev/null 2>&1 && alias make="gmake"
 which gsed >/dev/null 2>&1 && alias sed="gsed"
