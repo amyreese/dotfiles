@@ -1,5 +1,5 @@
-*.swp
 *~
+*.swp
 *.pyc
-*.antigen-compat
-vim/.netrwhist
+.DS_Store
+.vim/.netrwhist

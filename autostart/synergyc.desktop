@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Synergy Client
-Exec=synergyc 192.168.1.60
-Encoding=UTF-8
-Type=Application
-X-GNOME-Autostart-enabled=true
-Icon=synergy

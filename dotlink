@@ -1,11 +1,13 @@
 bin
-Brewfile = brewfile
-.alias = alias
-.bashrc = bashrc
+Brewfile
+.alias
+.bashrc
 .config/htop/htoprc = htoprc
-.profile = profile
-.pythonrc = pythonrc
-.tmux.conf = tmux.conf
-.vim = vim
-.vimrc = vimrc
-.zshrc = zshrc
+.gitconfig
+.gitignore
+.profile
+.pythonrc
+.tmux.conf
+.vim
+.vimrc
+.zshrc
