@@ -34,10 +34,19 @@ autoload -U down-line-or-beginning-search; zle -N down-line-or-beginning-search
 autoload -U edit-command-line; zle -N edit-command-line
 
 bindkey -e
-bindkey "$key[Up]" up-line-or-beginning-search
-bindkey "$key[Down]" down-line-or-beginning-search
+# mac
 bindkey "^[[A" up-line-or-beginning-search
-bindkey "^[[B" down-line-or-beginning-search
+bindkey "^[[B" up-line-or-beginning-search
+bindkey "^[[H" beginning-of-line
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[F" end-of-line
+bindkey "^[[4~" end-of-line
+# linux
+bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
+bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
+# shared
 bindkey '\ec' edit-command-line
 bindkey '\ee' edit-command-line
 
