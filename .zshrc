@@ -5,13 +5,16 @@ source ~/.alias
 
 ### zsh options ###
 
+setopt AUTO_LIST
 setopt AUTO_MENU
 setopt AUTO_NAME_DIRS
 setopt AUTO_PUSHD
+setopt COMPLETE_IN_WORD
 setopt CORRECT
 setopt DVORAK
-setopt GLOB_COMPLETE
 setopt GLOB_STAR_SHORT
+setopt LIST_PACKED
+setopt NO_CASE_GLOB
 
 setopt APPEND_HISTORY
 setopt EXTENDED_HISTORY
