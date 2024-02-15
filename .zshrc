@@ -39,7 +39,7 @@ autoload -U edit-command-line; zle -N edit-command-line
 bindkey -e
 # mac
 bindkey "^[[A" up-line-or-beginning-search
-bindkey "^[[B" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
 bindkey "^[[H" beginning-of-line
 bindkey "^[[1~" beginning-of-line
 bindkey "^[[F" end-of-line
