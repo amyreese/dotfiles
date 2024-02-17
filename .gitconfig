@@ -6,21 +6,6 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
-	preloadindex = true
-
-[safe]
-	bareRepository = true
-
-[help]
-	autocorrect = -1
-
-[color]
-	branch = auto
-	diff = auto
-	grep = auto
-	interactive = auto
-	status = auto
-	ui = auto
 
 [alias]
 	ignore = update-index --assume-unchanged
@@ -48,29 +33,56 @@
 	smi = !git submodule update --init --recursive
 	up = !git pullr && git smi
 
-[init]
-	defaultBranch = main
-
 [branch]
 	autosetuprebase = local
+
+[color]
+	branch = auto
+	diff = auto
+	grep = auto
+	interactive = auto
+	status = auto
+	ui = auto
+
+[commit]
+    cleanup = scissors
+
+[diff]
+    algorithm = histogram
+    colorMoved = true
+    colorMovedWS = allow-indentation-change
 
 [fetch]
     prune = true
 
-[push]
-	default = upstream
+[help]
+	autocorrect = -1
+
+[init]
+	defaultBranch = main
+
+[log]
+    date = iso
+
+[merge]
+    conflictstyle = zdiff3
 
 [pull]
 	ff = only
 
-[diff]
-	renames = true
+[push]
+    autoSetupRemote = true
+	default = upstream
+    followtags = true
 
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+[rebase]
+    autosquash = true
+    autostash = true
+
+[safe]
+	bareRepository = explicit
+
+# plugins
 
 [branchless "restack"]
 	preserveTimestamps = true
