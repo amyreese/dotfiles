@@ -89,3 +89,5 @@
     interactive = true
 [branchless "smartlog"]
     defaultRevset = ((branches() | @) % main()) | branches() | @
+[rerere]
+    enabled = true
