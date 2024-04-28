@@ -1,0 +1,32 @@
+tap "homebrew/bundle"
+tap "rajiv/fastmate"
+brew "mas"
+cask "1password"
+cask "alfred"
+cask "bartender"
+cask "daisydisk"
+cask "discord"
+cask "fastmate"
+cask "firefox"
+cask "font-fira-code"
+cask "font-input"
+cask "istat-menus"
+cask "iterm2"
+cask "middle"
+cask "obsidian"
+cask "pastebot"
+cask "rocket"
+cask "soundsource"
+cask "visual-studio-code"
+mas "Amphetamine", id: 937984704
+mas "Fantastical", id: 975937182
+mas "Ivory", id: 6444602274
+mas "Magnet", id: 441258766
+mas "MusicHarbor", id: 1440405750
+mas "NepTunes", id: 1006739057
+mas "Notability", id: 360593530
+mas "Numbers", id: 409203825
+mas "Parcel", id: 639968404
+mas "Reeder", id: 1529448980
+mas "Soulver 3", id: 1508732804
+mas "Wallaroo", id: 1630565980

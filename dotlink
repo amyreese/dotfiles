@@ -1,5 +1,6 @@
 bin
 Brewfile
+Brewfile.apps
 .alias
 .bashrc
 .config/htop/htoprc = htoprc
