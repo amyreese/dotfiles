@@ -6,6 +6,7 @@ Brewfile.apps
 .config/htop/htoprc = htoprc
 .gitconfig
 .gitignore
+.memes
 .profile
 .pythonrc
 .tmux.conf
