@@ -45,6 +45,8 @@
 						<string>Front</string>
 					</dict>
 					<dict>
+						<key>ActionColor</key>
+						<string>Purple</string>
 						<key>ActionUID</key>
 						<integer>424</integer>
 						<key>DisplayKind</key>
@@ -63,6 +65,8 @@
 						<string></string>
 						<key>Source</key>
 						<string>Nothing</string>
+						<key>StopOnFailure</key>
+						<false/>
 						<key>Text</key>
 						<string>/usr/local/bin/shuf -n1 ~/.memes</string>
 						<key>TimeOutAbortsMacro</key>
@@ -80,7 +84,7 @@
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:0,0,17,255=🐈=86=0=0=1=KMCOLOR:0,0,0,255</string>
 				<key>ModificationDate</key>
-				<real>750629804.62019503</real>
+				<real>750631004.35028696</real>
 				<key>Name</key>
 				<string>diff-macro-comment</string>
 				<key>Triggers</key>
@@ -166,6 +170,8 @@
 						<string>Front</string>
 					</dict>
 					<dict>
+						<key>ActionColor</key>
+						<string>Purple</string>
 						<key>ActionUID</key>
 						<integer>426</integer>
 						<key>DisplayKind</key>
@@ -184,6 +190,8 @@
 						<string></string>
 						<key>Source</key>
 						<string>Nothing</string>
+						<key>StopOnFailure</key>
+						<false/>
 						<key>Text</key>
 						<string>/usr/local/bin/shuf -n1 ~/.memes</string>
 						<key>TimeOutAbortsMacro</key>
@@ -259,7 +267,7 @@
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:0,0,17,255=🐈=86=0=0=1=KMCOLOR:0,0,0,255</string>
 				<key>ModificationDate</key>
-				<real>750379398.496526</real>
+				<real>750630988.259938</real>
 				<key>Name</key>
 				<string>diff-macro-accept-submit</string>
 				<key>Triggers</key>
