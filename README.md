@@ -14,7 +14,7 @@ setup
 
 To install all the dotfiles at once using dotlink directly from github:
 
-    $ dotlink git://github.com/amyreese/dotfiles
+    $ uvx dotlink git://github.com/amyreese/dotfiles
 
 Note that dotlink will overwrite any existing dotfiles.
 
