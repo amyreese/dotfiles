@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Custom Controls (4001)</key>
+	<array>
+		<dict>
+			<key>Action</key>
+			<integer>10001</integer>
+			<key>Chain Mode</key>
+			<integer>0</integer>
+			<key>Children</key>
+			<array>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>7</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>1</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>F9CDBF63-4784-4337-80D9-F065E5C71F5E</string>
+						<key>Key Code</key>
+						<integer>17</integer>
+						<key>Modifier Flags</key>
+						<integer>786721</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥T</string>
+					</dict>
+					<key>Identifier</key>
+					<string>F9CDBF63-4784-4337-80D9-F065E5C71F5E</string>
+					<key>Relative Frame</key>
+					<string>{{0.14285714285714285, 0}, {0.71428571428571419, 1}}</string>
+					<key>Title</key>
+					<string>Video</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Safari</string>
+						<key>Available Screen Frame</key>
+						<string>{{0, 0}, {2560, 1415}}</string>
+						<key>Bundle Identifier</key>
+						<string>com.apple.safari</string>
+						<key>Screen Frame</key>
+						<string>{{0, 0}, {2560, 1440}}</string>
+						<key>Window Frame</key>
+						<string>{{640, 0}, {1279, 1415}}</string>
+						<key>Window Subrole</key>
+						<string>AXStandardWindow</string>
+						<key>Window Title</key>
+						<string>Why This Part of Africa is Erased on Every Map You See | Nebula</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>2</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>2</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>D3867D43-C14B-4A80-8D5C-BE9A7374B9E9</string>
+						<key>Key Code</key>
+						<integer>126</integer>
+						<key>Modifier Flags</key>
+						<integer>11272481</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥↑</string>
+					</dict>
+					<key>Identifier</key>
+					<string>D3867D43-C14B-4A80-8D5C-BE9A7374B9E9</string>
+					<key>Relative Frame</key>
+					<string>{{0, 0}, {1, 1}}</string>
+					<key>Title</key>
+					<string>Fill</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Google Chrome</string>
+						<key>Available Screen Frame</key>
+						<string>{{0, 0}, {2560, 1415}}</string>
+						<key>Bundle Identifier</key>
+						<string>com.google.chrome</string>
+						<key>Screen Frame</key>
+						<string>{{0, 0}, {2560, 1440}}</string>
+						<key>Window Frame</key>
+						<string>{{0, 0}, {1280, 1415}}</string>
+						<key>Window Subrole</key>
+						<string>AXStandardWindow</string>
+						<key>Window Title</key>
+						<string>Formatting - Google Chrome</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>21</integer>
+					<key>Center Mode</key>
+					<integer>0</integer>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>2AFA7A36-5932-4931-BFED-B38A922B95AC</string>
+						<key>Key Code</key>
+						<integer>8</integer>
+						<key>Modifier Flags</key>
+						<integer>786721</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥C</string>
+					</dict>
+					<key>Identifier</key>
+					<string>2AFA7A36-5932-4931-BFED-B38A922B95AC</string>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>1</integer>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>4B07CE0B-2D19-4ACA-8261-B3DFF9A41569</string>
+						<key>Key Code</key>
+						<integer>125</integer>
+						<key>Modifier Flags</key>
+						<integer>11272481</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥↓</string>
+					</dict>
+					<key>Identifier</key>
+					<string>4B07CE0B-2D19-4ACA-8261-B3DFF9A41569</string>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>6</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>4</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>50CC995E-36F3-43F5-908C-B8F3D4C0AB99</string>
+						<key>Key Code</key>
+						<integer>123</integer>
+						<key>Modifier Flags</key>
+						<integer>11272481</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥←</string>
+					</dict>
+					<key>Identifier</key>
+					<string>50CC995E-36F3-43F5-908C-B8F3D4C0AB99</string>
+					<key>Relative Frame</key>
+					<string>{{0, 0}, {0.5, 1}}</string>
+					<key>Title</key>
+					<string>Left Half</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Google Chrome</string>
+						<key>Available Screen Frame</key>
+						<string>{{0, 0}, {2560, 1415}}</string>
+						<key>Bundle Identifier</key>
+						<string>com.google.chrome</string>
+						<key>Screen Frame</key>
+						<string>{{0, 0}, {2560, 1440}}</string>
+						<key>Window Frame</key>
+						<string>{{647, 1259}, {403, 84}}</string>
+						<key>Window Subrole</key>
+						<string>AXUnknown</string>
+						<key>Window Title</key>
+						<string>Find in page
+    Many Tricks · Support</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>6</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>4</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>049B86D8-24F0-49E4-B2BB-9AC21E38AFD1</string>
+						<key>Key Code</key>
+						<integer>124</integer>
+						<key>Modifier Flags</key>
+						<integer>11272481</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥→</string>
+					</dict>
+					<key>Identifier</key>
+					<string>049B86D8-24F0-49E4-B2BB-9AC21E38AFD1</string>
+					<key>Relative Frame</key>
+					<string>{{0.5, 0}, {0.5, 1}}</string>
+					<key>Title</key>
+					<string>Right Half</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Google Chrome</string>
+						<key>Available Screen Frame</key>
+						<string>{{0, 0}, {2560, 1415}}</string>
+						<key>Bundle Identifier</key>
+						<string>com.google.chrome</string>
+						<key>Screen Frame</key>
+						<string>{{0, 0}, {2560, 1440}}</string>
+						<key>Window Frame</key>
+						<string>{{647, 1259}, {403, 84}}</string>
+						<key>Window Subrole</key>
+						<string>AXUnknown</string>
+						<key>Window Title</key>
+						<string>Find in page
+    Many Tricks · Support</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>6</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>4</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>19D61B1B-A50E-4FED-A655-F7809791F2BF</string>
+						<key>Key Code</key>
+						<integer>33</integer>
+						<key>Modifier Flags</key>
+						<integer>786721</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥[</string>
+					</dict>
+					<key>Identifier</key>
+					<string>19D61B1B-A50E-4FED-A655-F7809791F2BF</string>
+					<key>Relative Frame</key>
+					<string>{{0, 0}, {0.66666666666666663, 1}}</string>
+					<key>Title</key>
+					<string>Major</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Google Chrome</string>
+						<key>Available Screen Frame</key>
+						<string>{{0, 0}, {2560, 1415}}</string>
+						<key>Bundle Identifier</key>
+						<string>com.google.chrome</string>
+						<key>Screen Frame</key>
+						<string>{{0, 0}, {2560, 1440}}</string>
+						<key>Window Frame</key>
+						<string>{{647, 1259}, {403, 84}}</string>
+						<key>Window Subrole</key>
+						<string>AXUnknown</string>
+						<key>Window Title</key>
+						<string>Find in page
+    Many Tricks · Support</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>6</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>4</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>29282F15-FFEF-4DE4-9DBF-CCD8061C748C</string>
+						<key>Key Code</key>
+						<integer>30</integer>
+						<key>Modifier Flags</key>
+						<integer>786721</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥]</string>
+					</dict>
+					<key>Identifier</key>
+					<string>29282F15-FFEF-4DE4-9DBF-CCD8061C748C</string>
+					<key>Relative Frame</key>
+					<string>{{0.66666666666666663, 0}, {0.33333333333333337, 1}}</string>
+					<key>Title</key>
+					<string>Minor</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Google Chrome</string>
+						<key>Available Screen Frame</key>
+						<string>{{0, 0}, {2560, 1415}}</string>
+						<key>Bundle Identifier</key>
+						<string>com.google.chrome</string>
+						<key>Screen Frame</key>
+						<string>{{0, 0}, {2560, 1440}}</string>
+						<key>Window Frame</key>
+						<string>{{647, 1259}, {403, 84}}</string>
+						<key>Window Subrole</key>
+						<string>AXUnknown</string>
+						<key>Window Title</key>
+						<string>Find in page
+    Many Tricks · Support</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>6</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>10</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>87656BAC-0B1D-4A54-98F0-50F757991C35</string>
+						<key>Key Code</key>
+						<integer>42</integer>
+						<key>Modifier Flags</key>
+						<integer>786721</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥\</string>
+					</dict>
+					<key>Identifier</key>
+					<string>87656BAC-0B1D-4A54-98F0-50F757991C35</string>
+					<key>Relative Frame</key>
+					<string>{{0.83333333333333326, 0.20000000000000001}, {0.16666666666666674, 0.69999999999999996}}</string>
+					<key>Title</key>
+					<string>Sidebar</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Workplace Chat</string>
+						<key>Available Screen Frame</key>
+						<string>{{-1280, 0}, {1280, 775}}</string>
+						<key>Bundle Identifier</key>
+						<string>workplace-desktop</string>
+						<key>Screen Frame</key>
+						<string>{{-1280, 0}, {1280, 800}}</string>
+						<key>Window Frame</key>
+						<string>{{-853, 0}, {853, 775}}</string>
+						<key>Window Subrole</key>
+						<string>AXStandardWindow</string>
+						<key>Window Title</key>
+						<string>Workplace Chat</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>6</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>4</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>D9BD15AB-2934-4485-8A67-AA7813D65F4D</string>
+						<key>Key Code</key>
+						<integer>4</integer>
+						<key>Modifier Flags</key>
+						<integer>786721</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥H</string>
+					</dict>
+					<key>Identifier</key>
+					<string>D9BD15AB-2934-4485-8A67-AA7813D65F4D</string>
+					<key>Relative Frame</key>
+					<string>{{0.5, 0}, {0.5, 0.5}}</string>
+					<key>Title</key>
+					<string>Chat</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Google Chrome</string>
+						<key>Available Screen Frame</key>
+						<string>{{0, 0}, {2560, 1415}}</string>
+						<key>Bundle Identifier</key>
+						<string>com.google.chrome</string>
+						<key>Screen Frame</key>
+						<string>{{0, 0}, {2560, 1440}}</string>
+						<key>Window Frame</key>
+						<string>{{647, 1259}, {403, 84}}</string>
+						<key>Window Subrole</key>
+						<string>AXUnknown</string>
+						<key>Window Title</key>
+						<string>Find in page
+    Many Tricks · Support</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<integer>19</integer>
+					<key>Configuration Grid</key>
+					<dict>
+						<key>Configuration Grid: Columns</key>
+						<integer>6</integer>
+						<key>Configuration Grid: Rows</key>
+						<integer>4</integer>
+					</dict>
+					<key>Hot Key</key>
+					<dict>
+						<key>Identifier</key>
+						<string>15BCE2D6-9C14-4DE4-948F-189CA503FACA</string>
+						<key>Key Code</key>
+						<integer>44</integer>
+						<key>Modifier Flags</key>
+						<integer>786721</integer>
+						<key>Visual Representation</key>
+						<string>⌃⌥/</string>
+					</dict>
+					<key>Identifier</key>
+					<string>15BCE2D6-9C14-4DE4-948F-189CA503FACA</string>
+					<key>Relative Frame</key>
+					<string>{{0.33333333333333331, 0}, {0.66666666666666674, 1}}</string>
+					<key>Title</key>
+					<string>Workchat</string>
+					<key>Window Description</key>
+					<dict>
+						<key>Application Name</key>
+						<string>Google Chrome</string>
+						<key>Available Screen Frame</key>
+						<string>{{0, 0}, {2560, 1415}}</string>
+						<key>Bundle Identifier</key>
+						<string>com.google.chrome</string>
+						<key>Screen Frame</key>
+						<string>{{0, 0}, {2560, 1440}}</string>
+						<key>Window Frame</key>
+						<string>{{647, 1259}, {403, 84}}</string>
+						<key>Window Subrole</key>
+						<string>AXUnknown</string>
+						<key>Window Title</key>
+						<string>Find in page
+    Many Tricks · Support</string>
+					</dict>
+				</dict>
+			</array>
+			<key>Children Expanded</key>
+			<true/>
+			<key>Identifier</key>
+			<string>0C79A521-99A7-4546-9086-90E7B6A01FD7</string>
+			<key>Title</key>
+			<string>amethyst</string>
+		</dict>
+	</array>
+</dict>
+</plist>
