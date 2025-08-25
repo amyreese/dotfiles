@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "rajiv/fastmate"
 brew "mas"
