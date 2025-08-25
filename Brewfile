@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 brew "bash"
 brew "cloc"
 brew "coreutils"
