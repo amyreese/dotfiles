@@ -8,10 +8,8 @@
     excludesfile = ~/.gitignore
 
 [alias]
-    ignore = update-index --assume-unchanged
-    unignore = update-index --no-assume-unchanged
-    amend = commit --amend
-    fixup = commit --amend --no-edit
+    sync = !git branchless sync --pull
+    files = show --pretty="" --name-status
     st = status -sb
     ci = commit
     cu = !git add -u && git commit
@@ -77,6 +75,7 @@
 [rebase]
     autosquash = true
     autostash = true
+    updateRefs = true
 
 [safe]
     bareRepository = explicit
