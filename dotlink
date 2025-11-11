@@ -9,6 +9,7 @@ Brewfile.apps
 .memes
 .profile
 .pythonrc
+.ssh/config
 .tmux.conf
 .vim
 .vimrc
