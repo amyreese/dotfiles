@@ -1,0 +1,6 @@
+hostname: ""
+profile: main
+repository:
+  type: git
+  url: git@github.com:amyreese/vscodium-settings.git
+  branch: main
