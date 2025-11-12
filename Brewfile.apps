@@ -1,31 +1,35 @@
-tap "homebrew/cask-fonts"
-tap "rajiv/fastmate"
 brew "mas"
 cask "1password"
 cask "alfred"
 cask "daisydisk"
 cask "discord"
-cask "fastmate"
+cask "fastmail"
 cask "firefox"
 cask "font-fira-code"
 cask "font-input"
+cask "iina"
 cask "istat-menus"
 cask "iterm2"
+cask "jordanbaird-ice"
 cask "middle"
+cask "moom"
 cask "obsidian"
 cask "pastebot"
 cask "replacicon"
 cask "rocket"
+cask "soulver"
 cask "soundsource"
-cask "visual-studio-code"
+cask "steermouse"
+cask "vscodium"
+mas "Affinity Photo", id: 824183456
 mas "Amphetamine", id: 937984704
 mas "Fantastical", id: 975937182
+mas "Hand Mirror", id: 1502839586
 mas "Ivory", id: 6444602274
-mas "Magnet", id: 441258766
 mas "MusicHarbor", id: 1440405750
 mas "NepTunes", id: 1006739057
 mas "Notability", id: 360593530
 mas "Parcel", id: 639968404
 mas "Reeder", id: 1529448980
-mas "Soulver 3", id: 1508732804
+mas "UTM", id: 1538878817
 mas "Wallaroo", id: 1630565980
