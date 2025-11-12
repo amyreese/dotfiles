@@ -3,7 +3,7 @@ Brewfile
 Brewfile.apps
 .alias
 .bashrc
-.config/htop/htoprc = htoprc
+.config/htop/htoprc = .htoprc
 .gitconfig
 .gitignore
 .memes
