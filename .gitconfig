@@ -9,6 +9,7 @@
 
 [alias]
     sync = !git branchless sync --pull
+    new = !git checkout main && git checkout -b
     files = show --pretty="" --name-status
     st = status -sb
     ci = commit
