@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cmd="cargo -q run -p ruff -- format --no-cache ${*}"
+echo "$ ${cmd}" >&2
+exec ${cmd}

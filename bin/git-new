@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -ex
+
+if [[ -z "$1" ]]; then
+    echo "usage: git new <name>"
+    exit 1
+fi
+
+prefix="amy/"
+git checkout -b "${prefix}$1" main
