@@ -14,3 +14,6 @@ if [ -f ${HOME}/.profile_local ]; then
 	. ${HOME}/.profile_local
 fi
 
+# Thanks I hate it
+GH_TELEMETRY=0
+DO_NOT_TRACK=true
